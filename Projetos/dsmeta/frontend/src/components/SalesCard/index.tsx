@@ -1,3 +1,4 @@
+import NotificationButton from '../NotificationButton';
 import './styles.css';
 
 function SalesCard() {
@@ -36,9 +37,7 @@ function SalesCard() {
                     <td>R$ 55300.00</td>
                     <td>
                       <div className="dsmeta-red-btn-container">
-                        <div className="dsmeta-red-btn">
-                          <img src="notification-icon.svg" alt="Notificar" />
-                        </div>
+                       <NotificationButton/>
                       </div>
                     </td>
                   </tr>
@@ -51,9 +50,7 @@ function SalesCard() {
                     <td>R$ 55300.00</td>
                     <td>
                       <div className="dsmeta-red-btn-container">
-                        <div className="dsmeta-red-btn">
-                          <img src="notification-icon.svg" alt="Notificar" />
-                        </div>
+                        <NotificationButton/>
                       </div>
                     </td>
                   </tr>
@@ -66,9 +63,7 @@ function SalesCard() {
                     <td>R$ 55300.00</td>
                     <td>
                       <div className="dsmeta-red-btn-container">
-                        <div className="dsmeta-red-btn">
-                          <img src="notification-icon.svg" alt="Notificar" />
-                        </div>
+                        <NotificationButton/>
                       </div>
                     </td>
                   </tr>
