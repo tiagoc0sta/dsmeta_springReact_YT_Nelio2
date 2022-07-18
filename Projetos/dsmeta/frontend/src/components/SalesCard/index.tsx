@@ -17,14 +17,21 @@ function SalesCard() {
   const [sales, setSales] = useState<Sale[]>([]);
 
   useEffect(() => {
-    axios.get(`${BASE_URL}/sales`).then((response) => {
-      setSales(response.data.content);
-    });
-  }, []);
+
+    const dmin = minDate.toISOString().slice(0, 10);
+    const dmax = maxDate.toISOString().slice(0, 10);
+
+    console.log(dmin)
+
+    axios.get(`${BASE_URL}/sales?minDate=${dmin}&maxDate=${dmax}`)
+      .then((response) => {
+        setSales(response.data.content);
+      });
+  }, [minDate, maxDate]);
 
   return (
     <div className="dsmeta-card">
-      <h2 className="dsmeta-sales-title">Vendas</h2>
+      <h2 className="dsmeta-sales-title">Sales</h2>
       <div>
         <div className="dsmeta-form-control-container">
           <DatePicker
@@ -51,10 +58,10 @@ function SalesCard() {
               <th className="show992">ID</th>
               <th className="show576">Date</th>
               <th>Vendedor</th>
-              <th className="show992">Visitas</th>
-              <th className="show992">Sells</th>
+              <th className="show992">Visits</th>
+              <th className="show992">Sales</th>
               <th>Total</th>
-              <th>Notificar</th>
+              <th>Notify</th>
             </tr>
           </thead>
           <tbody>
