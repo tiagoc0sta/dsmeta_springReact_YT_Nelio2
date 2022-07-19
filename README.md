@@ -35,7 +35,7 @@ HTML | CSS | Java | JS | Spring Boot | React | Heroku | H2 | Twilio
 
 ## Demo
 
-- [Online playable version - click here (Netlifly)](https://stupendous-kitsune-48a5bb.netlify.app/)
+- yarn dev
 
 ![image](https://user-images.githubusercontent.com/63982700/179375893-ed4eb4cb-2e06-4db1-9d74-5d12c2b0db94.png)
 ![image](https://user-images.githubusercontent.com/63982700/179773637-d4623f5c-590e-41b5-8fc4-7830214f1265.png)
